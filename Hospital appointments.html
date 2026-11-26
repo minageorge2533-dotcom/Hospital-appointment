@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Appointment</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#e8f6f8,#c7eef4);
+    color: #0f4c5c;
+    direction: rtl;
+}
+
+header {
+    background-color: #16A3B7;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #16A3B7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #138a9b;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    PureCare - Appointment 
+</header>
+
+<div class="container">
+    <h2>Book an Appointment</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Write your Name">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="01XXXXXXXXX">
+
+        <label>Departments</label>
+        <select>
+            <option>Select a Departments</option>
+            <option>Internal Medicine</option>
+            <option>Orthopeaedics</option>
+            <option>Pediatric</option>
+            <option>Dermatology</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date">
+
+        <label>Time</label>
+        <input type="time">
+
+        <button type="submit">Booking confirmation</button>
+    </form>
+</div>
+
+<footer>
+    © 2026 PureCare Hospital
+</footer>
+
+</body>
+</html>
